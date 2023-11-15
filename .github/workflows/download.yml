@@ -19,6 +19,20 @@ jobs:
       with:
         name: hello-0.0.1-SNAPSHOT.jar
         path: ./target
+    - name: Set Up Git
+      run: |
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+
+    - name: Commit and Push Artifacts
+      run: |
+        git checkout -b artifacts-store
+        git add ./target
+        git commit -m "Add artifacts"
+        git push origin artifacts-store
+
+
+    
 
     
 
