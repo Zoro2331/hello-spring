@@ -44,7 +44,12 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: my-artifacts
-
+    - name: print files
+      run: |
+        ls -a
+        echo "......"
+        ls -a target
+        
     - name: Set Up Git
       run: |
         git config --global user.email "you@example.com"
