@@ -18,7 +18,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: hello-0.0.1-SNAPSHOT.jar
-        path: ./downloaded_artifacts
+        path: ./target
 
     
 
