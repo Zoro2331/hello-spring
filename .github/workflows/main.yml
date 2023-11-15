@@ -25,6 +25,13 @@ jobs:
 
     - name: Build and Test
       run: |
+        mvn clean package 
+
+    - name: print files
+      run: |
+        ls -a
+        echo "......"
+        ls -a target
     
 
     - name: Upload Artifacts
@@ -45,11 +52,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: my-artifacts
-    - name: print files
-      run: |
-        ls -a
-        echo "......"
-        ls -a target
+   
         
     - name: Set Up Git
       run: |
