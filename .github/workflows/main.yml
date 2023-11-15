@@ -49,8 +49,8 @@ jobs:
         
     - name: Set Up Git
       run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email "dev.kukreja@beehyv.com"
+        git config --global user.name "Dev"
 
     - name: Commit and Push Artifacts
       run: |
