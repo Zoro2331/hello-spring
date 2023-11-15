@@ -33,28 +33,4 @@ jobs:
         name: hello-0.0.1-SNAPSHOT.jar
         path: ./target
 
-  trigger_downstream:
-    needs: build_and_test
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Download Artifacts
-      uses: actions/download-artifact@v2
-      with:
-        name: hello-0.0.1-SNAPSHOT.jar
-        path: ./target 
-        
-    - name: Set Up Git
-      run: |
-        git config --global user.email "dev.kukreja@beehyv.com"
-        git config --global user.name "Dev"
-
-    - name: Commit and Push Artifacts
-      run: |
-        git checkout -b artifacts-store
-        git add ./target
-        git commit -m "Add artifacts"
-        git push origin artifacts-store
+ 
