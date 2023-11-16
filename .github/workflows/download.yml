@@ -32,7 +32,7 @@ jobs:
 
     - name: Commit and Push Artifacts
       run: |
-        # git checkout -b artifacts-store
+        git pull origin artifacts-store
         git add ./target
         git commit -m "Add artifacts"
         git push origin artifacts-store
