@@ -18,7 +18,7 @@ jobs:
         fetch-depth: 0
         
     - name: checkout to artifacts
-      run: git checkout -b artifacts-store
+      run: git checkout artifacts-store
 
     - name: Download Artifacts
       uses: actions/download-artifact@v2
