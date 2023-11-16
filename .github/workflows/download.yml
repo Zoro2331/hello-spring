@@ -19,8 +19,8 @@ jobs:
         
     - name: checkout to artifacts
       run: | 
-        git pull origin artifacts-store
         git checkout artifacts-store
+        git pull origin artifacts-store
 
     - name: Download Artifacts
       uses: actions/download-artifact@v2
