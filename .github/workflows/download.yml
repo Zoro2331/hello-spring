@@ -14,7 +14,9 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-    
+      with:
+        fetch-depth: 0
+        
     - name: checkout to artifacts
       run: git checkout -b artifacts-store
 
