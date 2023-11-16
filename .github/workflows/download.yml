@@ -1,10 +1,11 @@
 name: Downstream Pipeline
 
 on:
-  workflow_run:
-    workflows: ["Main Pipeline"]
-    types:
-      - completed
+  workflow_call:
+  # workflow_run:
+    # workflows: ["Main Pipeline"]
+    # types:
+    #   - completed
 
 jobs:
   download_artifact:
