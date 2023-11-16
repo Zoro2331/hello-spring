@@ -14,6 +14,9 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
+    
+    - name: checkout to artifacts
+      run: git checkout artifacts-store
 
     - name: Download Artifacts
       uses: actions/download-artifact@v2
@@ -27,7 +30,7 @@ jobs:
 
     - name: Commit and Push Artifacts
       run: |
-        git checkout artifacts-store
+        # git checkout artifacts-store
         git add ./target
         git commit -m "Add artifacts"
         git push origin artifacts-store
