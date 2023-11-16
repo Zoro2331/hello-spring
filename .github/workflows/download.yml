@@ -2,7 +2,7 @@ name: Downstream Pipeline
 
 on:
   workflow_run:
-    workflows: ["main.yml"]
+    workflows: ["Main Pipeline"]
     types:
       - completed
 
