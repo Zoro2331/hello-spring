@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    fabric8.io/git-commit: e380aee7472b63d6671d8e0eafa1191e3c08ad20
+    fabric8.io/git-commit: cb4aa3aa2b26924e1c100b8f5f85f8c6bf29d7aa
     prometheus.io/port: "9779"
     fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/spring-boot-starter-parent/hello
     fabric8.io/iconUrl: img/icons/spring-boot.svg
