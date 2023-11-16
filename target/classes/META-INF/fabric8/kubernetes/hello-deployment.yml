@@ -3,7 +3,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   annotations:
-    fabric8.io/git-commit: 18d9e30139c029b841ad900e37c55ae28ded1e40
+    fabric8.io/git-commit: e380aee7472b63d6671d8e0eafa1191e3c08ad20
     fabric8.io/iconUrl: img/icons/spring-boot.svg
     fabric8.io/git-branch: main
     fabric8.io/metrics-path: dashboard/file/kubernetes-pods.json/?var-project=hello&var-version=0.0.1-SNAPSHOT
@@ -26,7 +26,7 @@ spec:
   template:
     metadata:
       annotations:
-        fabric8.io/git-commit: 18d9e30139c029b841ad900e37c55ae28ded1e40
+        fabric8.io/git-commit: e380aee7472b63d6671d8e0eafa1191e3c08ad20
         fabric8.io/metrics-path: dashboard/file/kubernetes-pods.json/?var-project=hello&var-version=0.0.1-SNAPSHOT
         fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/spring-boot-starter-parent/hello
         fabric8.io/iconUrl: img/icons/spring-boot.svg
@@ -44,7 +44,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: hello/hello:snapshot-231116-070845-0408
+        image: hello/hello:snapshot-231116-072420-0044
         imagePullPolicy: IfNotPresent
         name: spring-boot
         ports:
